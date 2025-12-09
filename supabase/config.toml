@@ -1,0 +1,7 @@
+project_id = "blbnrczwchmtmzsqhtay"
+
+[functions.remove-background]
+verify_jwt = false
+
+[functions.change-background]
+verify_jwt = false
