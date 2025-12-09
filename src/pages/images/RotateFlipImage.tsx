@@ -4,8 +4,12 @@ import { FileUpload } from "@/components/shared/FileUpload";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Helmet } from "react-helmet-async";
-import Icon1 from "@/assets/images/reduce-image-size.jpg"
-import Icon2 from "@/assets/images/improve-seo-score.jpg"
+import Icon1 from "@/assets/images/rotate-360.svg"
+import Icon2 from "@/assets/images/flip-image.svg"
+import Icon3 from "@/assets/images/social-media-orientation.svg"
+import Icon4 from "@/assets/images/maintain-high-quality.svg"
+import Icon5 from "@/assets/images/completely-browser-based-and-free-to-use.svg"
+import Icon6 from "@/assets/images/Works-on-all-devices-mobile-tablet-and-desktop.svg"
 import faqimage from "@/assets/images/faq-image.webp"
 import OGImage from "@/assets/images/og-rotate-img.png"
 import {
@@ -355,7 +359,7 @@ export default function RotateFlipImage() {
               <div className="icon">
                 <img
                   src={Icon1}
-                  alt=""
+                  alt="Instantly rotate images left, right, or 180 degrees"
                 />
               </div>
               <p className="text text-center">Instantly rotate images left, right, or 180 degrees</p>
@@ -364,7 +368,7 @@ export default function RotateFlipImage() {
               <div className="icon">
                 <img
                   src={Icon2}
-                  alt=""
+                  alt="Flip photos horizontally or vertically with one clic"
                 />
               </div>
               <p className="text text-center">Flip photos horizontally or vertically with one click</p>
@@ -372,8 +376,8 @@ export default function RotateFlipImage() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon3}
+                  alt="Correct image orientation for social media, websites, or printing"
                 />
               </div>
               <p className="text text-center">Correct image orientation for social media, websites, or printing</p>
@@ -381,8 +385,8 @@ export default function RotateFlipImage() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon4}
+                  alt="No loss of quality while rotating or flipping"
                 />
               </div>
               <p className="text text-center">No loss of quality while rotating or flipping</p>
@@ -390,8 +394,8 @@ export default function RotateFlipImage() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon5}
+                  alt="100% free with no login or watermark"
                 />
               </div>
               <p className="text text-center">100% free with no login or watermark</p>
@@ -399,8 +403,8 @@ export default function RotateFlipImage() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon6}
+                  alt="Works on mobile, tablet, and desktop"
                 />
               </div>
               <p className="text text-center">Works on mobile, tablet, and desktop</p>

@@ -5,8 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
 import { Helmet } from "react-helmet-async";
-import Icon1 from "@/assets/images/reduce-image-size.jpg"
-import Icon2 from "@/assets/images/improve-seo-score.jpg"
+import Icon1 from "@/assets/images/Reduce-image-size-up-to-90.svg"
+import Icon2 from "@/assets/images/Crop-images-to-any-custom-dimensions.svg"
+import Icon3 from "@/assets/images/Reduce-file-size-for-faster-website-performance.svg"
+import Icon4 from "@/assets/images/Works-with-JPG,-PNG-and-WebP.svg"
+import Icon5 from "@/assets/images/No-installation-or-signup-required.svg"
+import Icon6 from "@/assets/images/completely-browser-based-and-free-to-use.svg"
 import faqimage from "@/assets/images/faq-image.webp"
 import OGImage from "@/assets/images/og-resize-image.png"
 import {
@@ -444,7 +448,7 @@ export default function ResizeImage() {
                      <div className="icon">
                         <img
                            src={Icon1}
-                           alt=""
+                           alt="Resize images without noticeable quality loss"
                         />
                      </div>
                      <p className="text text-center">Resize images without noticeable quality loss</p>
@@ -453,7 +457,7 @@ export default function ResizeImage() {
                      <div className="icon">
                         <img
                            src={Icon2}
-                           alt=""
+                           alt="Maintain aspect ratio or set custom dimensions"
                         />
                      </div>
                      <p className="text text-center">Maintain aspect ratio or set custom dimensions</p>
@@ -461,8 +465,8 @@ export default function ResizeImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon3}
+                           alt="Reduce file size for faster website performance"
                         />
                      </div>
                      <p className="text text-center">Reduce file size for faster website performance</p>
@@ -470,8 +474,8 @@ export default function ResizeImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon4}
+                           alt="Works with PNG, JPG, JPEG, WEBP, GIF"
                         />
                      </div>
                      <p className="text text-center">Works with PNG, JPG, JPEG, WEBP, GIF</p>
@@ -479,8 +483,8 @@ export default function ResizeImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon5}
+                           alt="No account or premium subscription required"
                         />
                      </div>
                      <p className="text text-center">No account or premium subscription required</p>
@@ -488,8 +492,8 @@ export default function ResizeImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon6}
+                           alt="100% free and secure—your files never leave your device"
                         />
                      </div>
                      <p className="text text-center">100% free and secure—your files never leave your device</p>

@@ -7,8 +7,12 @@ import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { Helmet } from "react-helmet-async";
-import Icon1 from "@/assets/images/reduce-image-size.jpg"
-import Icon2 from "@/assets/images/improve-seo-score.jpg"
+import Icon1 from "@/assets/images/AI-powered-accuracy.svg"
+import Icon2 from "@/assets/images/Works-on-product-photos-portraits-graphics.svg"
+import Icon3 from "@/assets/images/no-photoshope-require.svg"
+import Icon4 from "@/assets/images/choose-color.svg"
+import Icon5 from "@/assets/images/maintain-high-quality.svg"
+import Icon6 from "@/assets/images/No-installation-or-signup-required.svg"
 import faqimage from "@/assets/images/faq-image.webp"
 import OGImage from "@/assets/images/og-remove-bg-image.png"
 import {
@@ -558,7 +562,7 @@ export default function ChangeBackground() {
                      <div className="icon">
                         <img
                            src={Icon1}
-                           alt=""
+                           alt="Instantly replace backgrounds with AI-powered precision"
                         />
                      </div>
                      <p className="text text-center">Instantly replace backgrounds with AI-powered precision</p>
@@ -567,7 +571,7 @@ export default function ChangeBackground() {
                      <div className="icon">
                         <img
                            src={Icon2}
-                           alt=""
+                           alt="Works perfectly for portraits, product photos, and graphics"
                         />
                      </div>
                      <p className="text text-center">Works perfectly for portraits, product photos, and graphics</p>
@@ -575,8 +579,8 @@ export default function ChangeBackground() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon3}
+                           alt="No design skills or software installation required"
                         />
                      </div>
                      <p className="text text-center">No design skills or software installation required</p>
@@ -584,8 +588,8 @@ export default function ChangeBackground() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon4}
+                           alt="Choose from solid colors, gradients, or upload your own background"
                         />
                      </div>
                      <p className="text text-center">Choose from solid colors, gradients, or upload your own background</p>
@@ -593,8 +597,8 @@ export default function ChangeBackground() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon5}
+                           alt="Maintains high-quality output with smooth edges and clean cutouts"
                         />
                      </div>
                      <p className="text text-center">Maintains high-quality output with smooth edges and clean cutouts</p>
@@ -602,8 +606,8 @@ export default function ChangeBackground() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon6}
+                           alt="Fast, browser-based tool with no login required"
                         />
                      </div>
                      <p className="text text-center">Fast, browser-based tool with no login required</p>

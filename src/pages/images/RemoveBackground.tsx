@@ -5,8 +5,12 @@ import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { Helmet } from "react-helmet-async";
-import Icon1 from "@/assets/images/reduce-image-size.jpg"
-import Icon2 from "@/assets/images/improve-seo-score.jpg"
+import Icon1 from "@/assets/images/AI-powered-accuracy.svg"
+import Icon2 from "@/assets/images/Works-on-product-photos-portraits-graphics.svg"
+import Icon3 from "@/assets/images/no-photoshope-require.svg"
+import Icon4 from "@/assets/images/fast-processing.svg"
+import Icon5 from "@/assets/images/Automatic-detection.svg"
+import Icon6 from "@/assets/images/Quick-drag-and-drop-upload-with-fast-processing.svg"
 import faqimage from "@/assets/images/faq-image.webp"
 import OGImage from "@/assets/images/og-remove-bg-image.png"
 import {
@@ -413,7 +417,7 @@ export default function RemoveBackground() {
               <div className="icon">
                 <img
                   src={Icon1}
-                  alt=""
+                  alt="AI-powered accuracy for clean and sharp cutouts"
                 />
               </div>
               <p className="text text-center">AI-powered accuracy for clean and sharp cutouts</p>
@@ -422,7 +426,7 @@ export default function RemoveBackground() {
               <div className="icon">
                 <img
                   src={Icon2}
-                  alt=""
+                  alt="Works on product photos, portraits, graphics, and logos"
                 />
               </div>
               <p className="text text-center">Works on product photos, portraits, graphics, and logos</p>
@@ -430,8 +434,8 @@ export default function RemoveBackground() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon3}
+                  alt="No Photoshop or editing skills required"
                 />
               </div>
               <p className="text text-center">No Photoshop or editing skills required</p>
@@ -439,8 +443,8 @@ export default function RemoveBackground() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon4}
+                  alt="Fast processing with high-quality results"
                 />
               </div>
               <p className="text text-center">Fast processing with high-quality results</p>
@@ -448,8 +452,8 @@ export default function RemoveBackground() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon5}
+                  alt="Automatic detection of edges, hair, and transparent areas"
                 />
               </div>
               <p className="text text-center">Automatic detection of edges, hair, and transparent areas</p>
@@ -457,8 +461,8 @@ export default function RemoveBackground() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon6}
+                  alt="Easy-to-use drag-and-drop interface"
                 />
               </div>
               <p className="text text-center">Easy-to-use drag-and-drop interface</p>
