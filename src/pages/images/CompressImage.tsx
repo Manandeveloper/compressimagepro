@@ -5,9 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { toast } from "sonner";
 import { Helmet } from "react-helmet-async";
-import Icon1 from "@/assets/images/reduce-image-size.jpg"
-import Icon2 from "@/assets/images/improve-seo-score.jpg"
-import Icon3 from "@/assets/images/no-watermark.webp"
+import Icon1 from "@/assets/images/Reduce-image-size-up-to-90.svg"
+import Icon2 from "@/assets/images/Improve-website-loading-speed-and-SEO-score.svg"
+import Icon3 from "@/assets/images/Maintain-high-clarity-with-smart-compression.svg"
+import Icon4 from "@/assets/images/Works-with-JPG,-PNG-and-WebP.svg"
+import Icon5 from "@/assets/images/No-watermark,-no-signup-no-limitations.svg"
+import Icon6 from "@/assets/images/Useful-for-blogs-ecommerce-portfolios-and-designers.svg"
 import faqimage from "@/assets/images/faq-image.webp"
 import OGImage from "@/assets/images/og-compress-image.png"
 import {
@@ -401,7 +404,7 @@ export default function CompressImage() {
                      <div className="icon">
                         <img
                            src={Icon1}
-                           alt=""
+                           alt="Reduce image size up to 90%"
                         />
                      </div>
                      <p className="text text-center">Reduce image size up to 90%</p>
@@ -410,7 +413,7 @@ export default function CompressImage() {
                      <div className="icon">
                         <img
                            src={Icon2}
-                           alt=""
+                           alt="Improve website loading speed and SEO score"
                         />
                      </div>
                      <p className="text text-center">Improve website loading speed and SEO score</p>
@@ -419,7 +422,7 @@ export default function CompressImage() {
                      <div className="icon">
                         <img
                            src={Icon3}
-                           alt=""
+                           alt="Maintain high clarity with smart compression"
                         />
                      </div>
                      <p className="text text-center">Maintain high clarity with smart compression</p>
@@ -427,8 +430,8 @@ export default function CompressImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon4}
+                           alt="Works with JPG, PNG, and WebP"
                         />
                      </div>
                      <p className="text text-center">Works with JPG, PNG, and WebP</p>
@@ -436,8 +439,8 @@ export default function CompressImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon5}
+                           alt="No watermark, no signup, no limitations"
                         />
                      </div>
                      <p className="text text-center">No watermark, no signup, no limitations</p>
@@ -445,8 +448,8 @@ export default function CompressImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon6}
+                           alt="Useful for blogs, ecommerce, portfolios, and designers"
                         />
                      </div>
                      <p className="text text-center">Useful for blogs, ecommerce, portfolios, and designers</p>

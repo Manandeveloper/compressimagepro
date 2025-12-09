@@ -7,8 +7,12 @@ import { Slider } from "@/components/ui/slider";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { Helmet } from "react-helmet-async";
-import Icon1 from "@/assets/images/reduce-image-size.jpg"
-import Icon2 from "@/assets/images/improve-seo-score.jpg"
+import Icon1 from "@/assets/images/Prevent-unauthorized-use-or-image-theft.svg"
+import Icon2 from "@/assets/images/Easily-add-text-or-logo-watermarks.svg"
+import Icon3 from "@/assets/images/Adjust-watermark-size-opacity-and-position.svg"
+import Icon4 from "@/assets/images/Maintain-high-clarity-with-smart-compression.svg"
+import Icon5 from "@/assets/images/Works-on-all-devices-mobile-tablet-and-desktop.svg"
+import Icon6 from "@/assets/images/Completely-browser-based-and-free-to-use.svg"
 import faqimage from "@/assets/images/faq-image.webp"
 import OGImage from "@/assets/images/og-watermark-image.png"
 import {
@@ -497,7 +501,7 @@ export default function AddWatermark() {
                      <div className="icon">
                         <img
                            src={Icon1}
-                           alt=""
+                           alt="Prevent unauthorized use or image theft"
                         />
                      </div>
                      <p className="text text-center">Prevent unauthorized use or image theft</p>
@@ -506,7 +510,7 @@ export default function AddWatermark() {
                      <div className="icon">
                         <img
                            src={Icon2}
-                           alt=""
+                           alt="Easily add text or logo watermarks"
                         />
                      </div>
                      <p className="text text-center">Easily add text or logo watermarks</p>
@@ -514,8 +518,8 @@ export default function AddWatermark() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon3}
+                           alt="Adjust watermark size, opacity, and position"
                         />
                      </div>
                      <p className="text text-center">Adjust watermark size, opacity, and position</p>
@@ -523,8 +527,8 @@ export default function AddWatermark() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon4}
+                           alt="Maintain high-quality image output"
                         />
                      </div>
                      <p className="text text-center">Maintain high-quality image output</p>
@@ -532,8 +536,8 @@ export default function AddWatermark() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon5}
+                           alt="Works on all devices mobile, tablet, desktop"
                         />
                      </div>
                      <p className="text text-center">Works on all devices mobile, tablet, desktop</p>
@@ -541,8 +545,8 @@ export default function AddWatermark() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon6}
+                           alt="100% free and no watermark from the tool"
                         />
                      </div>
                      <p className="text text-center">100% free and no watermark from the tool</p>

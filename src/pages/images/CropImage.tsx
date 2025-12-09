@@ -5,8 +5,12 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { Helmet } from "react-helmet-async";
-import Icon1 from "@/assets/images/reduce-image-size.jpg"
-import Icon2 from "@/assets/images/improve-seo-score.jpg"
+import Icon1 from "@/assets/images/Crop-images-to-any-custom-dimensions.svg"
+import Icon2 from "@/assets/images/Remove-unwanted-background.svg"
+import Icon3 from "@/assets/images/Works-with-JPG,-PNG-and-WebP.svg"
+import Icon4 from "@/assets/images/Real-time-preview-to-ensure-perfect-framing.svg"
+import Icon5 from "@/assets/images/No-quality-loss-during-the-cropping-process.svg"
+import Icon6 from "@/assets/images/Completely-browser-based-and-free-to-use.svg"
 import faqimage from "@/assets/images/faq-image.webp"
 import OGImage from "@/assets/images/og-crop-image.png"
 import {
@@ -415,7 +419,7 @@ export default function CropImage() {
                      <div className="icon">
                         <img
                            src={Icon1}
-                           alt=""
+                           alt="Crop images to any custom dimensions or aspect ratios"
                         />
                      </div>
                      <p className="text text-center">Crop images to any custom dimensions or aspect ratios</p>
@@ -424,7 +428,7 @@ export default function CropImage() {
                      <div className="icon">
                         <img
                            src={Icon2}
-                           alt=""
+                           alt="Remove unwanted background or unnecessary parts instantly"
                         />
                      </div>
                      <p className="text text-center">Remove unwanted background or unnecessary parts instantly</p>
@@ -432,8 +436,8 @@ export default function CropImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon3}
+                           alt="Supports PNG, JPG, JPEG, and WebP files"
                         />
                      </div>
                      <p className="text text-center">Supports PNG, JPG, JPEG, and WebP files</p>
@@ -441,8 +445,8 @@ export default function CropImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon4}
+                           alt="Real-time preview to ensure perfect framing"
                         />
                      </div>
                      <p className="text text-center">Real-time preview to ensure perfect framing</p>
@@ -450,8 +454,8 @@ export default function CropImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon5}
+                           alt="No quality loss during the cropping process"
                         />
                      </div>
                      <p className="text text-center">No quality loss during the cropping process</p>
@@ -459,8 +463,8 @@ export default function CropImage() {
                   <div className="single">
                      <div className="icon">
                         <img
-                           src={Icon1}
-                           alt=""
+                           src={Icon6}
+                           alt="Completely browser-based and free to use"
                         />
                      </div>
                      <p className="text text-center">Completely browser-based and free to use</p>

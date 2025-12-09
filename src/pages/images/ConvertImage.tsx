@@ -5,8 +5,12 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { Helmet } from "react-helmet-async";
-import Icon1 from "@/assets/images/reduce-image-size.jpg"
-import Icon2 from "@/assets/images/improve-seo-score.jpg"
+import Icon1 from "@/assets/images/Works-with-JPG,-PNG-and-WebP.svg"
+import Icon2 from "@/assets/images/Maintain-high-clarity-with-smart-compression.svg"
+import Icon3 from "@/assets/images/Quick-drag-and-drop-upload-with-fast-processing.svg"
+import Icon4 from "@/assets/images/Works-on-all-devices-mobile-tablet-and-desktop.svg"
+import Icon5 from "@/assets/images/No-installation-or-signup-required.svg"
+import Icon6 from "@/assets/images/Ideal-for-web-optimization-and-compatibility.svg"
 import faqimage from "@/assets/images/faq-image.webp"
 import OGImage from "@/assets/images/og-convert-image.jpg"
 import {
@@ -383,7 +387,7 @@ export default function ConvertImage() {
               <div className="icon">
                 <img
                   src={Icon1}
-                  alt=""
+                  alt="Convert images to multiple formats like JPG, PNG, WebP, BMP, and more"
                 />
               </div>
               <p className="text text-center">Convert images to multiple formats like JPG, PNG, WebP, BMP, and more</p>
@@ -392,7 +396,7 @@ export default function ConvertImage() {
               <div className="icon">
                 <img
                   src={Icon2}
-                  alt=""
+                  alt="Maintain original image quality during conversion"
                 />
               </div>
               <p className="text text-center">Maintain original image quality during conversion</p>
@@ -400,8 +404,8 @@ export default function ConvertImage() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon3}
+                  alt="Quick drag-and-drop upload with fast processing"
                 />
               </div>
               <p className="text text-center">Quick drag-and-drop upload with fast processing</p>
@@ -409,8 +413,8 @@ export default function ConvertImage() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon4}
+                  alt="Works on all devices mobile, tablet, and desktop"
                 />
               </div>
               <p className="text text-center">Works on all devices mobile, tablet, and desktop</p>
@@ -418,8 +422,8 @@ export default function ConvertImage() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon5}
+                  alt="No installation or signup required"
                 />
               </div>
               <p className="text text-center">No installation or signup required</p>
@@ -427,8 +431,8 @@ export default function ConvertImage() {
             <div className="single">
               <div className="icon">
                 <img
-                  src={Icon1}
-                  alt=""
+                  src={Icon6}
+                  alt="Ideal for web optimization and compatibility"
                 />
               </div>
               <p className="text text-center">Ideal for web optimization and compatibility</p>
