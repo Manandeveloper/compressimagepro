@@ -10,7 +10,7 @@ import Icon2 from "@/assets/images/Remove-unwanted-background.svg"
 import Icon3 from "@/assets/images/Works-with-JPG,-PNG-and-WebP.svg"
 import Icon4 from "@/assets/images/Real-time-preview-to-ensure-perfect-framing.svg"
 import Icon5 from "@/assets/images/No-quality-loss-during-the-cropping-process.svg"
-import Icon6 from "@/assets/images/Completely-browser-based-and-free-to-use.svg"
+import Icon6 from "@/assets/images/completely-browser-based-and-free-to-use.svg"
 import faqimage from "@/assets/images/faq-image.webp"
 import OGImage from "@/assets/images/og-crop-image.png"
 import {

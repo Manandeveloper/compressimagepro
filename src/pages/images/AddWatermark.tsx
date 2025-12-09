@@ -12,7 +12,7 @@ import Icon2 from "@/assets/images/Easily-add-text-or-logo-watermarks.svg"
 import Icon3 from "@/assets/images/Adjust-watermark-size-opacity-and-position.svg"
 import Icon4 from "@/assets/images/Maintain-high-clarity-with-smart-compression.svg"
 import Icon5 from "@/assets/images/Works-on-all-devices-mobile-tablet-and-desktop.svg"
-import Icon6 from "@/assets/images/Completely-browser-based-and-free-to-use.svg"
+import Icon6 from "@/assets/images/completely-browser-based-and-free-to-use.svg"
 import faqimage from "@/assets/images/faq-image.webp"
 import OGImage from "@/assets/images/og-watermark-image.png"
 import {
