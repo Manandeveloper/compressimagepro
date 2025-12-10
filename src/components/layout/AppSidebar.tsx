@@ -109,8 +109,7 @@ export function AppSidebar() {
           <Wand2 className="h-5 w-5 text-primary-foreground" />
         </div>
         <div className="flex flex-col">
-          <span className="text-lg font-bold text-sidebar-foreground">MediaWizard</span>
-          <span className="text-xs text-muted-foreground">Pro Tools</span>
+          <span className="text-lg font-bold text-sidebar-foreground">Compress Image Pro</span>
         </div>
       </div>
 

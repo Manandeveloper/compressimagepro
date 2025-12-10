@@ -163,7 +163,8 @@ export default function CompressImage() {
       ? Math.round((1 - compressedSize / file.size) * 100)
       : 0;
 
-   const canonicalUrl = window.location.origin + "/image-compress";
+   // const canonicalUrl = window.location.origin + "/image-compress";
+   const canonicalUrl = "https://compressimagepro.netlify.app" + "/image-compress";
 
    const faqSchema = {
       "@context": "https://schema.org",
@@ -533,7 +534,7 @@ export default function CompressImage() {
                   <div className="image">
                      <p className="small-title">Still have questions?</p>
                      <p className="big-title">Relax because we always will be here for you</p>
-                     <img src={faqimage} alt="" />
+                     <img src={faqimage} alt="compressimage faq image" />
                   </div>
                   <div className="content">
                      {/* <h2 className="text-center">Frequently Asked Questions</h2> */}

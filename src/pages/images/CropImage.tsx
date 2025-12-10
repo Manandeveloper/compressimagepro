@@ -186,7 +186,8 @@ export default function CropImage() {
       setCroppedUrl(null);
       setCropArea({ x: 0, y: 0, width: 100, height: 100 });
    };
-   const canonicalUrl = window.location.origin + "/image-crop";
+   // const canonicalUrl = window.location.origin + "/image-crop";
+   const canonicalUrl = "https://compressimagepro.netlify.app" + "/image-crop";
    const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -557,7 +558,7 @@ export default function CropImage() {
                   <div className="image">
                      <p className="small-title">Still have questions?</p>
                      <p className="big-title">Relax because we always will be here for you</p>
-                     <img src={faqimage} alt="" />
+                     <img src={faqimage} alt="cropimage faq image" />
                   </div>
                   <div className="content">
                      {/* <h2 className="text-center">Frequently Asked Questions</h2> */}

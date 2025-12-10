@@ -203,7 +203,8 @@ export default function ChangeBackground() {
       setBackgroundImage(null);
       setBackgroundImagePreview(null);
    };
-   const canonicalUrl = window.location.origin + "/change-background";
+   // const canonicalUrl = window.location.origin + "/change-background";
+   const canonicalUrl = "https://compressimagepro.netlify.app" + "/change-background";
    const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -700,7 +701,7 @@ export default function ChangeBackground() {
                   <div className="image">
                      <p className="small-title">Still have questions?</p>
                      <p className="big-title">Relax because we always will be here for you</p>
-                     <img src={faqimage} alt="" />
+                     <img src={faqimage} alt="change background faq image" />
                   </div>
                   <div className="content">
                      {/* <h2 className="text-center">Frequently Asked Questions</h2> */}

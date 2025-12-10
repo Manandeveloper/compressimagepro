@@ -271,7 +271,8 @@ h1 {
 }
 
 .why-use .wrap img {
-    width: 3.2rem;
+    width: 4.3rem;
+    height: 4.3rem;
     margin: 0 auto 1rem;
 }
 
@@ -283,6 +284,10 @@ h1 {
 .advantages h2 {
     text-align: left;
     margin-bottom: 1.5rem;
+}
+
+.short-desc {
+    padding-bottom: 0 !important;
 }
 
 .advantages p,
@@ -402,6 +407,58 @@ h1 {
     padding-bottom: 15px;
 }
 
+body.not-found aside {
+    display: none;
+}
+
+body.not-found main {
+    padding: 0;
+}
+
+body.not-found .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+body.not-found .wrap h1 {
+    font-size: 5rem;
+    line-height: 140%;
+}
+
+body.not-found .wrap h1 {
+    line-height: 140%;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+body.not-found .wrap h1 span {
+    color: hsl(var(--primary));
+}
+
+body.not-found .wrap p.sub-title {
+    font-size: 2rem;
+    width: 22rem;
+    margin-bottom: 2.2rem;
+}
+
+body.not-found .wrap a.text-primary {
+    font-size: 1.1rem;
+    background: hsl(var(--primary));
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+body.not-found .page-not-found {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 1650px) {
     h1 {
         font-size: 1.9rem;
@@ -422,6 +479,10 @@ h1 {
 
     .faq-sec p.big-title {
         font-size: 1.9rem;
+    }
+
+    body.not-found .wrap h1 {
+        font-size: 4.5rem;
     }
 }
 
@@ -518,6 +579,33 @@ h1 {
     .faq-sec .single p.answer {
         font-size: 1rem;
     }
+
+    body.not-found .wrap h1 {
+        font-size: 4rem;
+    }
+
+    body.not-found .wrap p.sub-title {
+        font-size: 1.7rem;
+        margin-bottom: 2.7rem;
+    }
+
+    body.not-found .min-h-screen.bg-background>button {
+        display: none;
+    }
+
+}
+
+@media (max-width: 991px) {
+    body.not-found .wrap h1 {
+        font-size: 3rem;
+        margin-bottom: 1.4rem;
+    }
+
+    body.not-found .wrap p.sub-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        width: 16rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -563,4 +651,20 @@ h1 {
         min-width: 160px;
     }
 
+    body.not-found .wrap {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    body.not-found .wrap p.sub-title {
+        font-size: 1.3rem;
+        width: 16rem;
+        margin: 0 auto 1.9rem;
+    }
+
+    body.not-found .wrap a.text-primary {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
 }

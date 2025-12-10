@@ -217,7 +217,8 @@ export default function AddWatermark() {
       setWatermarkedUrl(null);
       setText("© Your Name");
    };
-   const canonicalUrl = window.location.origin + "/image-watermark";
+   // const canonicalUrl = window.location.origin + "/image-watermark";
+   const canonicalUrl = "https://compressimagepro.netlify.app" + "/image-watermark";
    const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -639,7 +640,7 @@ export default function AddWatermark() {
                   <div className="image">
                      <p className="small-title">Still have questions?</p>
                      <p className="big-title">Relax because we always will be here for you</p>
-                     <img src={faqimage} alt="" />
+                     <img src={faqimage} alt="Watermark faq image" />
                   </div>
                   <div className="content">
                      {/* <h2 className="text-center">Frequently Asked Questions</h2> */}

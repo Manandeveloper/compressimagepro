@@ -167,7 +167,8 @@ export default function RotateFlipImage() {
     setFlipH(false);
     setFlipV(false);
   };
-  const canonicalUrl = window.location.origin + "/rotate-image";
+  // const canonicalUrl = window.location.origin + "/rotate-image";
+  const canonicalUrl = "https://compressimagepro.netlify.app" + "/rotate-image";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -496,7 +497,7 @@ export default function RotateFlipImage() {
             <div className="image">
               <p className="small-title">Still have questions?</p>
               <p className="big-title">Relax because we always will be here for you</p>
-              <img src={faqimage} alt="" />
+              <img src={faqimage} alt="rotateimage faq image" />
             </div>
             <div className="content">
               {/* <h2 className="text-center">Frequently Asked Questions</h2> */}

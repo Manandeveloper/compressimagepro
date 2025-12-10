@@ -153,7 +153,8 @@ const features = [
 ];
 
 import { Helmet } from "react-helmet-async";
-const canonicalUrl = window.location.origin;
+// const canonicalUrl = window.location.origin;
+const canonicalUrl = "https://compressimagepro.netlify.app";
 export default function Dashboard() {
   return (
     <>
@@ -184,7 +185,7 @@ export default function Dashboard() {
         <div className="relative overflow-hidden rounded-3xl gradient-hero p-8 lg:p-12">
           <div className="relative z-10">
             <h1 className="text-3xl font-bold text-primary-foreground lg:text-4xl">
-              Welcome to MediaWizard Pro
+              Welcome to Compress Image Pro
             </h1>
             <p className="mt-3 max-w-xl text-lg text-primary-foreground/90">
               Your all-in-one toolkit for images, videos, and PDFs. Transform your media
