@@ -13,12 +13,14 @@ const links = [
     { url: '/rotate-image', priority: 0.9 },
 ];
 
-const sitemap = new SitemapStream({ hostname: 'https://compressimagepro.netlify.app' });
+const sitemap = new SitemapStream({
+    hostname: 'https://compressimagepro.netlify.app'
+});
 
+// Write sitemap inside dist folder (Netlify publish folder)
 streamToPromise(
-    sitemap
-        .pipe(createWriteStream('./public/sitemap.xml'))
-).then(() => console.log('Sitemap generated!'));
+    sitemap.pipe(createWriteStream('./dist/sitemap.xml'))
+).then(() => console.log('✔ Sitemap generated!'));
 
 links.forEach(link => sitemap.write(link));
 sitemap.end();
