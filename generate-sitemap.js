@@ -1,5 +1,5 @@
 import { SitemapStream, streamToPromise } from 'sitemap';
-import { createWriteStream } from 'fs';
+import { createWriteStream, existsSync, mkdirSync } from 'fs';
 
 const links = [
     { url: '/', changefreq: 'weekly', priority: 1.0 },
@@ -13,13 +13,23 @@ const links = [
     { url: '/rotate-image', priority: 0.9 },
 ];
 
+if (!existsSync('./dist')) {
+    mkdirSync('./dist', { recursive: true });
+}
+
 const sitemap = new SitemapStream({
     hostname: 'https://compressimagepro.netlify.app'
 });
 
-// Write sitemap inside dist folder (Netlify publish folder)
+const writeStream = createWriteStream('./dist/sitemap.xml');
+
+if (!writeStream) {
+    console.error("❌ Failed to create write stream for sitemap.xml");
+    process.exit(1);
+}
+
 streamToPromise(
-    sitemap.pipe(createWriteStream('./dist/sitemap.xml'))
+    sitemap.pipe(writeStream)
 ).then(() => console.log('✔ Sitemap generated!'));
 
 links.forEach(link => sitemap.write(link));
