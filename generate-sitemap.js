@@ -1,36 +1,47 @@
 import { SitemapStream, streamToPromise } from 'sitemap';
-import { createWriteStream, existsSync, mkdirSync } from 'fs';
+import { writeFile } from 'fs/promises';
+import { existsSync, mkdirSync } from 'fs';
 
 const links = [
-    { url: '/', changefreq: 'weekly', priority: 1.0 },
-    { url: '/image-compress', priority: 0.9 },
-    { url: '/image-resize', priority: 0.9 },
-    { url: '/image-crop', priority: 0.9 },
-    { url: '/image-watermark', priority: 0.9 },
-    { url: '/remove-background', priority: 0.9 },
-    { url: '/change-background', priority: 0.9 },
-    { url: '/image-convert', priority: 0.9 },
-    { url: '/rotate-image', priority: 0.9 },
+  { url: '/', changefreq: 'weekly', priority: 1.0 },
+  { url: '/image-compress', priority: 0.9 },
+  { url: '/image-resize', priority: 0.9 },
+  { url: '/image-crop', priority: 0.9 },
+  { url: '/image-watermark', priority: 0.9 },
+  { url: '/remove-background', priority: 0.9 },
+  { url: '/change-background', priority: 0.9 },
+  { url: '/image-convert', priority: 0.9 },
+  { url: '/rotate-image', priority: 0.9 },
 ];
 
-if (!existsSync('./dist')) {
+async function generate() {
+  // Ensure dist/ exists
+  if (!existsSync('./dist')) {
     mkdirSync('./dist', { recursive: true });
+  }
+
+  // Create sitemap stream
+  const smStream = new SitemapStream({
+    hostname: 'https://compressimagepro.netlify.app',
+  });
+
+  // Write links to stream
+  for (const link of links) {
+    smStream.write(link);
+  }
+  smStream.end();
+
+  // Convert stream → XML buffer
+  const xmlBuffer = await streamToPromise(smStream);
+  const xml = xmlBuffer.toString();
+
+  // Save to dist folder
+  await writeFile('./dist/sitemap.xml', xml);
+
+  console.log('✔ Sitemap created successfully!');
 }
 
-const sitemap = new SitemapStream({
-    hostname: 'https://compressimagepro.netlify.app'
+generate().catch((err) => {
+  console.error('❌ Sitemap generation failed:', err);
+  process.exit(1);
 });
-
-const writeStream = createWriteStream('./dist/sitemap.xml');
-
-if (!writeStream) {
-    console.error("❌ Failed to create write stream for sitemap.xml");
-    process.exit(1);
-}
-
-streamToPromise(
-    sitemap.pipe(writeStream)
-).then(() => console.log('✔ Sitemap generated!'));
-
-links.forEach(link => sitemap.write(link));
-sitemap.end();
