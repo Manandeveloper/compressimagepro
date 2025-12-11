@@ -16,6 +16,7 @@ import CropImage from "./pages/images/CropImage";
 import AddWatermark from "./pages/images/AddWatermark";
 import RotateFlipImage from "./pages/images/RotateFlipImage";
 
+
 // Video
 import TrimVideo from "./pages/videos/TrimVideo";
 import VideoToGif from "./pages/videos/VideoToGif";
@@ -34,6 +35,8 @@ import CompressPDF from "./pages/pdfs/CompressPDF";
 
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsCondition from "./pages/TermsCondition";
 
 const queryClient = new QueryClient();
 
@@ -77,6 +80,8 @@ const App = () => (
 
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms-condition" element={<TermsCondition />} />
           </Routes>
         </MainLayout>
       </BrowserRouter>

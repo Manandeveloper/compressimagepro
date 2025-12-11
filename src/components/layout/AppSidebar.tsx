@@ -161,32 +161,37 @@ export function AppSidebar() {
                 />
               </button>
 
-                <div className="ml-4 space-y-1 animate-fade-in">
-                  {group.items.map((item) => (
-                    <NavLink
-                      key={item.href}
-                      to={item.href}
-                      onClick={() => setIsMobileOpen(false)}
-                    >
-                      {({ isActive }) => (
-                        <div
-                          className={cn(
-                            "flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm transition-all duration-200",
-                            isActive
-                              ? "bg-primary text-primary-foreground shadow-sm"
-                              : "text-muted-foreground hover:bg-sidebar-accent hover:text-sidebar-foreground"
-                          )}
-                        >
-                          <item.icon className="h-4 w-4" />
-                          {item.title}
-                        </div>
-                      )}
-                    </NavLink>
-                  ))}
-                </div>
+              <div className="ml-4 space-y-1 animate-fade-in">
+                {group.items.map((item) => (
+                  <NavLink
+                    key={item.href}
+                    to={item.href}
+                    onClick={() => setIsMobileOpen(false)}
+                  >
+                    {({ isActive }) => (
+                      <div
+                        className={cn(
+                          "flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm transition-all duration-200",
+                          isActive
+                            ? "bg-primary text-primary-foreground shadow-sm"
+                            : "text-muted-foreground hover:bg-sidebar-accent hover:text-sidebar-foreground"
+                        )}
+                      >
+                        <item.icon className="h-4 w-4" />
+                        {item.title}
+                      </div>
+                    )}
+                  </NavLink>
+                ))}
+              </div>
+              <div className="extra-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms-condition">Terms & Consition</a>
+              </div>
               {/* {isExpanded && (
               )} */}
             </div>
+
           );
         })}
       </nav>

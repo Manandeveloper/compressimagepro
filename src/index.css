@@ -459,6 +459,49 @@ body.not-found .page-not-found {
     align-items: center;
 }
 
+.privacy-page {
+    padding: 4rem 0;
+}
+
+.privacy-page p {
+    margin-bottom: 1rem;
+}
+
+.privacy-page p,
+.privacy-page ul li {
+    margin-bottom: 1rem;
+}
+
+.privacy-page ul li {
+    display: list-item;
+    list-style: disc;
+    margin-left: 1rem;
+}
+
+.privacy-page h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.1rem 0;
+}
+
+.privacy-page hr {
+    margin: 2rem 0;
+}
+
+.extra-links {
+    margin: 1rem 0 !important;
+}
+
+.extra-links a {
+    display: block;
+    font-size: 1rem;
+    color: hsl(var(--muted-foreground));
+    font-weight: 500;
+    padding: 1rem 0 !important;
+    margin: 0 15px !important;
+    border-bottom: 1px solid rgba(0 0 0 / 0.1);
+}
+
 @media (max-width: 1650px) {
     h1 {
         font-size: 1.9rem;
@@ -606,6 +649,14 @@ body.not-found .page-not-found {
         margin-bottom: 2rem;
         width: 16rem;
     }
+
+    .privacy-page {
+        padding: 1rem 0;
+    }
+
+    .privacy-page hr {
+        margin: 1.6rem 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -666,5 +717,17 @@ body.not-found .page-not-found {
     body.not-found .wrap a.text-primary {
         font-size: 1rem;
         padding: 0.8rem 1.5rem;
+    }
+
+    .privacy-page .container {
+        padding: 0;
+    }
+
+    .privacy-page h3 {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
     }
 }
