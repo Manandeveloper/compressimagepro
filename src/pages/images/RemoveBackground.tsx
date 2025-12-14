@@ -162,7 +162,7 @@ export default function RemoveBackground() {
     setResultUrl(null);
   };
   // const canonicalUrl = window.location.origin + "/remove-background";
-  const canonicalUrl = "https://compressimagepro.netlify.app" + "/remove-background";
+  const canonicalUrl = "https://compressimagepro.com" + "/remove-background";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

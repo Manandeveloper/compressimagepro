@@ -22,7 +22,7 @@ async function generate() {
 
   // Create sitemap stream
   const smStream = new SitemapStream({
-    hostname: 'https://compressimagepro.netlify.app',
+    hostname: 'https://compressimagepro.com',
   });
 
   // Write links to stream

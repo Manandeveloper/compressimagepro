@@ -204,7 +204,7 @@ export default function ChangeBackground() {
       setBackgroundImagePreview(null);
    };
    // const canonicalUrl = window.location.origin + "/change-background";
-   const canonicalUrl = "https://compressimagepro.netlify.app" + "/change-background";
+   const canonicalUrl = "https://compressimagepro.com" + "/change-background";
    const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",

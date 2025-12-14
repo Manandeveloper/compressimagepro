@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://compressimagepro.netlify.app/sitemap.xml
+Sitemap: https://compressimagepro.com/sitemap.xml

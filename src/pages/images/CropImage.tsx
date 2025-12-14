@@ -187,7 +187,7 @@ export default function CropImage() {
       setCropArea({ x: 0, y: 0, width: 100, height: 100 });
    };
    // const canonicalUrl = window.location.origin + "/image-crop";
-   const canonicalUrl = "https://compressimagepro.netlify.app" + "/image-crop";
+   const canonicalUrl = "https://compressimagepro.com" + "/image-crop";
    const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",

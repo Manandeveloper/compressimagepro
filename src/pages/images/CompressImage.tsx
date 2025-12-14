@@ -164,7 +164,7 @@ export default function CompressImage() {
       : 0;
 
    // const canonicalUrl = window.location.origin + "/image-compress";
-   const canonicalUrl = "https://compressimagepro.netlify.app" + "/image-compress";
+   const canonicalUrl = "https://compressimagepro.com" + "/image-compress";
 
    const faqSchema = {
       "@context": "https://schema.org",

@@ -196,7 +196,7 @@ export default function ResizeImage() {
       setHeight(0);
    };
    // const canonicalUrl = window.location.origin + "/image-resize";
-   const canonicalUrl = "https://compressimagepro.netlify.app" + "/image-resize";
+   const canonicalUrl = "https://compressimagepro.com" + "/image-resize";
    const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",

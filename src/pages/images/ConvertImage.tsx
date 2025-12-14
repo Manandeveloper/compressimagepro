@@ -162,7 +162,7 @@ export default function ConvertImage() {
 
   const currentFormat = file?.type.split("/")[1]?.toUpperCase() || "Unknown";
   // const canonicalUrl = window.location.origin + "/image-convert";
-  const canonicalUrl = "https://compressimagepro.netlify.app" + "/image-convert";
+  const canonicalUrl = "https://compressimagepro.com" + "/image-convert";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

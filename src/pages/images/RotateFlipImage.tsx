@@ -168,7 +168,7 @@ export default function RotateFlipImage() {
     setFlipV(false);
   };
   // const canonicalUrl = window.location.origin + "/rotate-image";
-  const canonicalUrl = "https://compressimagepro.netlify.app" + "/rotate-image";
+  const canonicalUrl = "https://compressimagepro.com" + "/rotate-image";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

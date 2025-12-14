@@ -218,7 +218,7 @@ export default function AddWatermark() {
       setText("© Your Name");
    };
    // const canonicalUrl = window.location.origin + "/image-watermark";
-   const canonicalUrl = "https://compressimagepro.netlify.app" + "/image-watermark";
+   const canonicalUrl = "https://compressimagepro.com" + "/image-watermark";
    const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
