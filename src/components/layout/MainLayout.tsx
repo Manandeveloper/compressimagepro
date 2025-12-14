@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { AppSidebar } from "./AppSidebar";
-
 interface MainLayoutProps {
   children: ReactNode;
 }

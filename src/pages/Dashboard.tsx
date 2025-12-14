@@ -153,7 +153,8 @@ const features = [
 ];
 
 import { Helmet } from "react-helmet-async";
-const canonicalUrl = window.location.origin;
+// const canonicalUrl = window.location.origin;
+const canonicalUrl = "https://compressimagepro.netlify.app";
 export default function Dashboard() {
   return (
     <>

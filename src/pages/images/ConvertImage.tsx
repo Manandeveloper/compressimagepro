@@ -161,7 +161,8 @@ export default function ConvertImage() {
   };
 
   const currentFormat = file?.type.split("/")[1]?.toUpperCase() || "Unknown";
-  const canonicalUrl = window.location.origin + "/image-convert";
+  // const canonicalUrl = window.location.origin + "/image-convert";
+  const canonicalUrl = "https://compressimagepro.netlify.app" + "/image-convert";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -524,7 +525,7 @@ export default function ConvertImage() {
             <div className="image">
               <p className="small-title">Still have questions?</p>
               <p className="big-title">Relax because we always will be here for you</p>
-              <img src={faqimage} alt="" />
+              <img src={faqimage} alt="convert faq image" />
             </div>
             <div className="content">
               {/* <h2 className="text-center">Frequently Asked Questions</h2> */}
