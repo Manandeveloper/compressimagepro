@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "generate:blogs": "node src/scripts/generateBlogsJson.js",
+    "dev": "npm run generate:blogs && vite",
     "build": "vite build && node generate-sitemap.js",
-    "build:dev": "vite build --mode development",
+    "build:dev": "npm run generate:blogs && vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.12.10",
     "@ffmpeg/util": "^0.12.1",

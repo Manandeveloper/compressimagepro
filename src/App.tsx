@@ -37,6 +37,8 @@ import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsCondition from "./pages/TermsCondition";
+import BlogList from "./pages/BlogList";
+import BlogDetail from "./pages/BlogDetail";
 
 const queryClient = new QueryClient();
 
@@ -82,6 +84,8 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms-condition" element={<TermsCondition />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
           </Routes>
         </MainLayout>
       </BrowserRouter>

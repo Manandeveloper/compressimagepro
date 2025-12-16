@@ -502,6 +502,84 @@ body.not-found .page-not-found {
     border-bottom: 1px solid rgba(0 0 0 / 0.1);
 }
 
+.blog-list h2.blog-title {
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.blog-list ul.grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog-list ul.grid .img-wrap {
+    height: 14rem;
+}
+
+.blog-list ul.grid .img-wrap img,
+.blog-detail .feature-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.blog-detail .feature-img {
+    height: 43rem;
+}
+
+.blog-detail h2,
+.blog-detail h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 130%;
+    margin: 1.4rem 0;
+}
+
+.blog-detail h3 {
+    font-size: 1.5rem;
+}
+
+.blog-detail .content p,
+.blog-detail .content table * {
+    font-size: 1.1rem;
+    margin-bottom: 1.1rem;
+    line-height: 180%;
+}
+
+.blog-detail .content ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.blog-detail .content ol {
+    list-style: auto;
+}
+
+.blog-detail .content ol li {
+    margin-left: 20px;
+}
+
+.blog-detail .content table * {
+    margin: 0;
+}
+
+.blog-detail .content table {
+    width: 100%;
+    margin: 2.7rem 0;
+}
+
+.blog-detail .content table thead td {
+    background: #003546;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .2);
+    padding: 0.8rem 2rem;
+}
+
+.blog-detail .content table tbody td {
+    background: #e5e5e5;
+    color: #000;
+    border: 1px solid rgba(255, 255, 255, .2);
+    padding: 0.8rem 2rem;
+}
+
 @media (max-width: 1650px) {
     h1 {
         font-size: 1.9rem;
