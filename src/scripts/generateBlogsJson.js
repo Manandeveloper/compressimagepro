@@ -33,7 +33,7 @@ const blogs = files
       title,
       author: "Manan Patel",
       date: new Date().toISOString().split("T")[0],
-      featureImage: `/src/assets/blog-images/${slug}.webp`,
+      featureImage: `/blog-images/${slug}.webp`,
       content: html.trim()
     };
   });

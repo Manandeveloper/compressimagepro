@@ -522,7 +522,7 @@ body.not-found .page-not-found {
 }
 
 .blog-detail .feature-img {
-    height: 43rem;
+    height: auto;
 }
 
 .blog-detail h2,
@@ -578,6 +578,10 @@ body.not-found .page-not-found {
     color: #000;
     border: 1px solid rgba(255, 255, 255, .2);
     padding: 0.8rem 2rem;
+}
+
+.blog-detail .content .table-wrap {
+    overflow-x: auto;
 }
 
 @media (max-width: 1650px) {
@@ -735,6 +739,30 @@ body.not-found .page-not-found {
     .privacy-page hr {
         margin: 1.6rem 0;
     }
+
+    .blog-list h2.blog-title {
+        font-size: 1.6rem;
+    }
+
+    .blog-list ul.grid .img-wrap {
+        height: 12rem;
+    }
+
+    .blog-detail h2,
+    .blog-detail h3 {
+        font-size: 1.6rem;
+        margin: 1.2rem 0;
+    }
+
+    .blog-detail h3 {
+        font-size: 1.2rem;
+    }
+
+    .blog-detail .content p,
+    .blog-detail .content table * {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -807,5 +835,19 @@ body.not-found .page-not-found {
 
     h1 {
         font-size: 1.5rem;
+    }
+
+    .blog-detail {
+        padding: 0;
+    }
+
+    .blog-detail .content table thead td,
+    .blog-detail .content table tbody td {
+        padding: 0.7rem 1.3rem;
+    }
+
+    .blog-detail .content table * {
+        line-height: 130%;
+        font-size: .9rem;
     }
 }
