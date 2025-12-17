@@ -185,6 +185,7 @@ export function AppSidebar() {
                 ))}
               </div>
               <div className="extra-links">
+                <a href="/Blog">Blog</a>
                 <a href="/privacy">Privacy Policy</a>
                 <a href="/terms-condition">Terms & Consition</a>
               </div>
