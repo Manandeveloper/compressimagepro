@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+
 import {
   Image,
   Video,
@@ -30,7 +31,7 @@ import {
   Wand2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import icon from "../../../public/favicon.ico"
 interface NavItem {
   title: string;
   href: string;
@@ -105,9 +106,10 @@ export function AppSidebar() {
     <div className="flex h-full flex-col">
       {/* Logo */}
       <div className="flex h-16 items-center gap-3 border-b border-sidebar-border px-4">
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl gradient-primary shadow-md">
+        {/* <div className="flex h-10 w-10 items-center justify-center rounded-xl gradient-primary shadow-md">
           <Wand2 className="h-5 w-5 text-primary-foreground" />
-        </div>
+        </div> */}
+        <img src={icon} />
         <div className="flex flex-col">
           <span className="text-lg font-bold text-sidebar-foreground">Compress Image Pro</span>
         </div>
@@ -218,7 +220,7 @@ export function AppSidebar() {
       <Button
         variant="ghost"
         size="icon"
-        className="fixed left-4 top-4 z-50 lg:hidden"
+        className="menu-btn fixed left-4 top-4 z-50 lg:hidden"
         onClick={() => setIsMobileOpen(!isMobileOpen)}
       >
         {isMobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -235,7 +237,7 @@ export function AppSidebar() {
       {/* Sidebar */}
       <aside
         className={cn(
-          "fixed left-0 top-0 z-40 h-full w-72 border-r border-sidebar-border bg-sidebar transition-transform duration-300 lg:translate-x-0",
+          "mobile-sidebar fixed left-0 top-0 z-40 h-full w-72 border-r border-sidebar-border bg-sidebar transition-transform duration-300 lg:translate-x-0",
           isMobileOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >

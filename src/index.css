@@ -600,6 +600,16 @@ body.not-found .page-not-found {
 
 .blog-detail .content a {
     font-weight: bold;
+    text-decoration: underline;
+    color: hsl(var(--accent)) !important;
+}
+
+.menu-btn {
+    background: hsl(var(--accent)) !important;
+}
+
+.menu-btn svg {
+    color: #fff !important;
 }
 
 @media (max-width: 1650px) {
@@ -744,9 +754,32 @@ body.not-found .page-not-found {
         font-size: 1.4rem;
         margin-bottom: 1rem;
     }
+
+}
+
+@media (max-width: 1024px) {
+    .custom-wrap {
+        display: block;
+    }
+
+    aside.mobile-sidebar {
+        padding-top: 4rem;
+    }
+
+    .custom-wrap>div {
+        margin-bottom: 1.5rem;
+    }
+
+    main>div {
+        padding-top: 5rem !important;
+    }
 }
 
 @media (max-width: 991px) {
+    html {
+        font-size: 14px;
+    }
+
     body.not-found .wrap h1 {
         font-size: 3rem;
         margin-bottom: 1.4rem;
@@ -887,5 +920,9 @@ body.not-found .page-not-found {
 
     .blog-list ul.grid li {
         padding: 1rem;
+    }
+
+    .blog-detail .content table {
+        margin: 1.2rem 0;
     }
 }

@@ -260,7 +260,7 @@ export default function CompressImage() {
             description=""
             icon={Minimize2}
          >
-            <div className="grid gap-8 lg:grid-cols-2">
+            <div className="grid gap-8 lg:grid-cols-2 custom-wrap">
                {/* Left: Upload & Settings */}
                <div className="space-y-6">
                   <FileUpload
